@@ -1,0 +1,623 @@
+/* Présentation générale */ 
+body
+{
+	font-family: Arial, sans-serif;
+	font-size: 130%;
+	background-color: #DCF4F5;
+}
+
+/* Page d'index */
+#menu
+{
+	position: absolute;
+	right: 0px;
+	
+	width: 100%;
+	font-size: 200%;
+	text-align: center;
+}
+
+#menu a
+{
+	color: black;
+	text-decoration: none;
+}
+
+#menu a img
+{
+	border: none;
+}
+
+/* Message d'erreur */
+.erreur
+{
+	color: #FF0000;
+	text-align: center;
+}
+
+/* Menu du haut */
+#haut
+{
+	width: 80%;
+	height: 60px;
+	margin: auto;
+	margin-bottom: 10px;
+	
+	line-height: 60px;
+	text-align: center;
+	border: solid 2px black;
+	
+	background-repeat: no-repeat;
+	background-position: left;
+}
+
+.adherents
+{
+	background-image: url("images/adherents.png");
+}
+
+.produits
+{
+	background-image: url("images/produits.png");
+}
+
+.transactions
+{
+	background-image: url("images/transactions.png");
+}
+
+#haut a
+{
+	color: black;
+	text-decoration: none;
+}
+
+#milieu
+{
+	width: 30%;
+}
+
+#gauche
+{
+	margin-right: 10px;
+	font-size: 70%;
+}
+
+#droite
+{
+	margin-left: 10px;
+	font-size: 70%;
+}
+
+/* Tableaux */
+table
+{
+	width: 100%;
+	font-size: 100%;
+	border: 1px solid black;
+	text-align: center;
+	border-collapse: collapse;
+}
+
+table td
+{
+	border-style: solid;
+	border-width: 1px;	
+}
+
+table tr:hover
+{
+	background-color: #FAFFFF;
+	cursor: default;
+}
+
+table th
+{
+	border-style: solid;
+	border-width: 1px;
+}
+
+th.header { 
+    background-image: url("images/bg.gif");     
+    cursor: pointer; 
+    font-weight: bold; 
+    background-repeat: no-repeat; 
+    background-position: center left; 
+    padding-left: 20px; 
+    margin-left: -1px; 
+}
+
+th.headerSortUp { 
+    background-image: url("images/asc.gif"); 
+    background-color: #FAFFFF; 
+} 
+
+th.headerSortDown { 
+    background-image: url("images/desc.gif"); 
+    background-color: #FAFFFF; 
+} 
+
+#tableau
+{
+	text-align: center;
+}
+
+/* Formulaires */
+
+input
+{
+	border: solid 1px black;
+	text-align: center;
+	font-weight: bold;
+}
+
+select
+{
+	border: solid 1px black;
+	text-align: center;
+	font-weight: bold;
+}
+
+input:focus
+{
+	border: inset 1px blue;
+}
+
+select:focus
+{
+	border: inset 1px blue;
+}
+
+.labelChamps
+{
+	font-size: 130%;
+	float: left;
+	width: 40%;
+	text-align: right;
+}
+
+.listeChamps
+{
+	font-size: 130%;
+	float: right;
+	width: 50%;
+}
+
+.champ
+{
+	float: left;
+	width: 15%;
+	text-align: center;
+	font-size: 130%;
+}
+
+.valider
+{
+	clear: both;
+	width: 15%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Champs d'édition */
+.champEditer
+{
+	width: 100px;
+}
+
+.petit
+{
+	width: 50px;
+}
+
+.grand
+{
+	width: 200px;
+}
+
+/* Message */
+.message
+{
+	text-align: center;
+	font-size: 150%;
+}
+
+#cotisation
+{
+	color: red;
+}
+
+/* Fenêtre des graphiques */
+#graphiques
+{
+	position: absolute;
+	width: 35%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	
+	border: 1px solid black;
+	background-color: white;
+	font-size: 10pt;
+	
+	display: none;
+}
+
+/* Autocomplete */
+.ac_results {
+	border: 1px solid gray;
+	background-color: white;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	position: absolute;
+	z-index: 10000;
+	display: none;
+	font-size: 12pt;
+
+	max-height: 50%;
+	overflow: auto;
+}
+
+.ac_results li {
+	padding: 2px 5px;
+	padding-right: 15px;
+	white-space: nowrap;
+	color: #101010;
+	text-align: left;
+}
+
+.ac_over {
+	cursor: pointer;
+	background-color: #F0F0B8;
+}
+
+.ac_match {
+	text-decoration: underline;
+	color: black;
+}
+
+/* Divers */
+#exporter 
+{
+	padding: 10px 0px;
+	text-align: center;
+	font-size: 80%;
+}
+
+.lien
+{
+	color: blue;
+	cursor: pointer;
+}
+
+#raz
+{
+	font-size: 80%;
+	text-align: center;
+}
+
+.entree
+{
+	color: green;
+}
+
+.sortie
+{
+	color: red;
+}
+
+#chargement
+{
+	text-align: center;
+	position: fixed; 
+	width: 40%; 
+	bottom: 10%; 
+	left: 30%; 
+	background-color: white; 
+	border: 1px solid; 
+}
+
+.boutonSupprimer
+{
+	position: fixed;
+	right: 30px;
+	bottom: 0px;
+	background-color: white;
+	text-align: center;
+	padding: 5px;
+	border: solid 1px blue;
+	visibility: hidden;
+	cursor: pointer;
+}
+
+.supprimer
+{
+	cursor: pointer; 
+}
+
+.editer
+{
+	cursor: pointer;
+}
+
+/* Flora */
+
+/* Choix de date */
+
+#ui-datepicker-div, .ui-datepicker-inline {
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 14px;
+	padding: 0;
+	margin: 0;
+	background: #DDD;
+	width: 185px;
+}
+#ui-datepicker-div {
+	display: none;
+	border: 1px solid #FF9900;
+	z-index: 10;
+}
+.ui-datepicker-inline {
+	float: left;
+	display: block;
+	border: 0;
+}
+.ui-datepicker-dialog {
+	padding: 5px !important;
+	border: 4px ridge #DDD !important;
+}
+button.ui-datepicker-trigger {
+	width: 25px;
+}
+img.ui-datepicker-trigger {
+	margin: 2px;
+	vertical-align: middle;
+}
+.ui-datepicker-prompt {
+	float: left;
+	padding: 2px;
+	background: #DDD;
+	color: #000;
+}
+*html .ui-datepicker-prompt {
+	width: 185px;
+}
+.ui-datepicker-control, .ui-datepicker-links, .ui-datepicker-header, .ui-datepicker {
+	clear: both;
+	float: left;
+	width: 100%;
+	color: #FFF;
+}
+.ui-datepicker-control {
+	background: #FF9900;
+	padding: 2px 0px;
+}
+.ui-datepicker-links {
+	background: #E0F4D7;
+	padding: 2px 0px;
+}
+.ui-datepicker-control, .ui-datepicker-links {
+	font-weight: bold;
+	font-size: 80%;
+	letter-spacing: 1px;
+}
+.ui-datepicker-links label {
+	padding: 2px 5px;
+	color: #888;
+}
+.ui-datepicker-clear, .ui-datepicker-prev {
+	float: left;
+	width: 34%;
+}
+.ui-datepicker-current {
+	float: left;
+	width: 30%;
+	text-align: center;
+}
+.ui-datepicker-close, .ui-datepicker-next {
+	float: right;
+	width: 34%;
+	text-align: right;
+}
+.ui-datepicker-header {
+	padding: 1px 0 3px;
+	background: #83C948;
+	text-align: center;
+	font-weight: bold;
+	height: 1.3em;
+}
+.ui-datepicker-header select {
+	background: #83C948;
+	color: #000;
+	border: 0px;
+	font-weight: bold;
+}
+.ui-datepicker {
+	background: #CCC;
+	text-align: center;
+	font-size: 100%;
+}
+.ui-datepicker a {
+	display: block;
+	width: 100%;
+}
+.ui-datepicker .ui-datepicker-title-row {
+	background: #B1DB87;
+	color: #000;
+}
+.ui-datepicker .ui-datepicker-days-row {
+	background: #FFF;
+	color: #666;
+}
+.ui-datepicker-week-col {
+	background: #B1DB87;
+	color: #000;
+}
+.ui-datepicker .ui-datepicker-days-cell {
+	color: #000;
+	border: 1px solid #DDD;
+}
+#ui-datepicker .ui-datepicker-days-cell a {
+	display: block;
+}
+.ui-datepicker .ui-datepicker-week-end-cell {
+	background: #E0F4D7;
+}
+.ui-datepicker .ui-datepicker-days-cell-over {
+	background: #FFF;
+	border: 1px solid #777;
+}
+.ui-datepicker .ui-datepicker-unselectable {
+	color: #888;
+}
+.ui-datepicker-today {
+	background: #B1DB87 !important;
+}
+.ui-datepicker-current-day {
+	background: #83C948 !important;
+}
+#ui-datepicker-div a, .ui-datepicker-inline a {
+	cursor: pointer;
+	margin: 0;
+	padding: 0;
+	background: none;
+	color: #000;
+}
+.ui-datepicker-inline .ui-datepicker-links a {
+	padding: 0 5px !important;
+}
+.ui-datepicker-control a, .ui-datepicker-links a {
+	padding: 2px 5px !important;
+	color: #000 !important;
+}
+.ui-datepicker-title-row a {
+	color: #000 !important;
+}
+.ui-datepicker-control a:hover {
+	background: #FDD !important;
+	color: #333 !important;
+}
+.ui-datepicker-links a:hover, .ui-datepicker-title-row a:hover {
+	background: #FFF !important;
+	color: #333 !important;
+}
+.ui-datepicker-multi .ui-datepicker {
+	border: 1px solid #83C948;
+}
+.ui-datepicker-one-month {
+	float: left;
+	width: 185px;
+}
+.ui-datepicker-new-row {
+	clear: left;
+}
+.ui-datepicker-cover {
+	display: none;
+	display/**/: block;
+	position: absolute;
+	z-index: -1;
+	filter: mask();
+	top: -4px;
+	left: -4px;
+	width: 193px;
+	height: 200px;
+}
+
+/* Onglets */
+
+@media projection, screen {
+    .ui-tabs-hide {
+        display: none;
+    }
+}
+
+@media print {
+    .ui-tabs-nav {
+        display: none;
+    }
+}
+
+/* Skin */
+.ui-tabs-nav, .ui-tabs-panel {
+    font-family: "Trebuchet MS", Trebuchet, Verdana, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+}
+.ui-tabs-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 3px;
+}
+.ui-tabs-nav:after {
+    display: block;
+    clear: both;
+    content: " ";
+}
+.ui-tabs-nav li {
+    float: left;
+    margin: 0 0 0 2px;
+    font-weight: bold;
+}
+.ui-tabs-nav a, .ui-tabs-nav a span {
+    float: left;
+    padding: 0 12px;
+    background: url("images/tabs.png") no-repeat;
+}
+.ui-tabs-nav a {
+    margin: 5px 0 0;
+    padding-left: 0;
+    background-position: 100% 0;
+    text-decoration: none;
+    white-space: nowrap;
+    outline: 0;
+}
+.ui-tabs-nav a:link, .ui-tabs-nav a:visited {
+    color: #fff;
+}
+.ui-tabs-nav .ui-tabs-selected a {
+    position: relative;
+    top: 1px;
+    z-index: 2;
+    margin-top: 0;
+    background-position: 100% -23px;
+}
+.ui-tabs-nav a span {
+    padding-top: 1px;
+    padding-right: 0;
+    height: 20px;
+    background-position: 0 0;
+    line-height: 20px;
+}
+.ui-tabs-nav .ui-tabs-selected a span {
+    padding-top: 0;
+    height: 27px;
+    background-position: 0 -23px;
+    line-height: 27px;
+}
+.ui-tabs-nav .ui-tabs-selected a:link, .ui-tabs-nav .ui-tabs-selected a:visited,
+.ui-tabs-nav .ui-tabs-disabled a:link, .ui-tabs-nav .ui-tabs-disabled a:visited {
+    cursor: text;
+}
+.ui-tabs-nav a:hover, .ui-tabs-nav a:focus, .ui-tabs-nav a:active,
+.ui-tabs-nav .ui-tabs-unselect a:hover, .ui-tabs-nav .ui-tabs-unselect a:focus, .ui-tabs-nav .ui-tabs-unselect a:active {
+    cursor: pointer;
+}
+.ui-tabs-disabled {
+    opacity: .4;
+    filter: alpha(opacity=40);
+}
+.ui-tabs-nav .ui-tabs-disabled a:link, .ui-tabs-nav .ui-tabs-disabled a:visited {
+    color: #000;
+}
+.ui-tabs-panel {
+    border: 1px solid #519e2d;
+    padding: 10px;
+    background: #FAFFFF;
+}
+
+* html .ui-tabs-nav {
+    display: inline-block;
+}
+
+*:first-child+html .ui-tabs-nav  {
+    display: inline-block;
+}
