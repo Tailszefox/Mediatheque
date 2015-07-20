@@ -1,0 +1,5 @@
+<?php
+$mysql_hostname = "localhost";
+$mysql_username = "username";
+$mysql_password = "password";
+?>
