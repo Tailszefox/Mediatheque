@@ -3,10 +3,10 @@
 error_reporting(0);
 
 //On lit les informations depuis le fichier
-$fichier = file('config.txt', FILE_IGNORE_NEW_LINES);
+require("config_values.php");
 
 //On se connecte à la base
-$db = mysql_connect($fichier[0], $fichier[1], $fichier[2]);
+$db = mysql_connect($mysql_hostname, $mysql_username, $mysql_password);
 
 if(!$db)
 {
